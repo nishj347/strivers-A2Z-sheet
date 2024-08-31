@@ -39,3 +39,36 @@ int main() {
     extra2();
     return 0;
 }
+
+
+// stack
+#include <bits/stdc++.h>
+using namespace std;
+void explain(){
+    stack<int>st;
+
+    st.push(9);
+    st.emplace(8);
+    st.push(3);
+cout<<st.top()<<endl;
+}
+
+
+void priority(){
+    priority_queue<int>pq;
+    pq.push(3);
+    pq.push(98);
+    pq.push(32);//max heap
+    cout<<pq.top()<<endl;
+    priority_queue<int,vector<int>,greater<int>>pq1;
+    pq1.push(8);//min heap
+    pq1.push(67);
+    pq1.push(67);
+    cout<<pq1.top();
+}
+int main(){
+    explain();
+    priority();
+
+    return 0;
+}
