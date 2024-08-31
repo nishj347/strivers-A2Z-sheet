@@ -72,3 +72,55 @@ int main(){
 
     return 0;
 }
+
+
+// vectors
+#include <iostream>
+#include <bits/stdc++.h>
+#include <vector>
+#include<stack>
+using namespace std;
+int demo(){
+
+    pair<int,int>arr[]={{1,3},{2,4}};
+    cout<<arr[1].first<<endl;;
+    return 0;
+}
+
+int demo2(){
+    vector<int>v(5);
+    v.push_back(2);
+    v.push_back(8);
+    for (int i = 0; i<  v.size(); i++) {
+        cout << v[i] << " "; 
+    }
+    cout << endl;
+
+    return 0;  
+}
+int demo3(){
+    vector<int>v(5);
+    v.push_back(2);
+    v.push_back(8);
+    for (vector<int>::iterator i=v.begin();i!=v.end();i++) {
+        i=i+2;
+        cout << *i << " ";  
+    }
+    cout << endl;
+
+    return 0;  
+}
+
+
+
+
+
+int main(){
+    demo();
+    demo2();
+    demo3();
+
+}
+
+
+
