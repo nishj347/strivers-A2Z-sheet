@@ -110,3 +110,35 @@ int main(){
     divisor(n);
     return 0;
 }
+// palindrome:
+#include<iostream>
+using namespace std;
+
+bool palindrome(int n){
+    int original=n;
+    int num=0;
+    while(n>0){
+        int lastdigit=n%10;
+        num=num*10+lastdigit;
+        n=n/10;
+        }
+        return original==num;
+
+    
+}
+
+int main(){
+    int n;
+    cin>>n;
+    bool result=palindrome(n);
+        if (result){
+    cout<<"true"<<endl;
+}
+else{
+    cout<<"false"<<endl;
+}
+    return 0;
+
+
+}
+
