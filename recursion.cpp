@@ -81,5 +81,23 @@ int main(){
     return 0;
 }
 
+// backtracking:
+#include<iostream>
+using namespace std;
+void demo(int n){
+    if (n>1){
+        return;
+    }
+    demo(n-1);
+    cout<<n<<endl;
+}
+
+int main(){
+    demo(4);
+    return 0;
+}
+
+
+
 
 
