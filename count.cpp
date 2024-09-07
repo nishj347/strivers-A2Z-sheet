@@ -142,3 +142,49 @@ else{
 
 }
 
+// armstrong no
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+bool checkarmstrong(int n){
+    int original=n;
+    int digit=0;
+    int sum=0;
+    int temp=n;
+
+    while(temp!=0){
+        digit++;
+        temp/=10;
+    }
+    temp=n;
+
+    while(temp!=0){
+        int separateno=temp%10;
+        int power=1;
+        for(int i = 0; i < digit; i++) {
+            power *= separateno;
+        }
+
+        sum += power;
+        temp /= 10;
+    }
+    return (original==sum);
+
+
+
+}
+int main(){
+    int n;
+    cin>>n;
+    bool result=checkarmstrong(n);
+    if(result){
+        cout<<"true"<<endl;
+    }
+    else{
+        cout<<"false"<<endl;
+    }
+    return 0;
+}
+
