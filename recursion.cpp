@@ -1,3 +1,5 @@
+// Author: nishj347 @github
+// 1ton
 #include<iostream>
 using namespace std;
 
@@ -94,6 +96,22 @@ void demo(int n){
 
 int main(){
     demo(4);
+    return 0;
+}
+
+// sum:
+#include <iostream>
+using namespace std;
+int  demo(int i, int sum=0){
+    if (i<1){
+        return 0;
+    }
+    return i+ demo(i-1);
+}
+
+int main(){
+    int result=demo(5);
+    cout<<result;
     return 0;
 }
 
