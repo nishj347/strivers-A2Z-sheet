@@ -58,3 +58,28 @@ int main(){
 
 
 
+// print name:
+#include<iostream>
+#include<string>
+using namespace std;
+int count=1;
+string demo(int n){
+    if(count==n){
+        return "done";
+    }
+
+    cout<<"adi"<<endl;
+    count++;
+    demo(n);
+}
+
+int main(){
+    int n;
+    cout<<"enter the times name is to be printed:"<<endl;
+    cin>>n;
+    cout<<demo(n);
+    return 0;
+}
+
+
+
