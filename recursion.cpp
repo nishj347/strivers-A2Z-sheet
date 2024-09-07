@@ -14,3 +14,27 @@ int main(){
 }
 
 
+// nto1
+#include<iostream>
+using namespace std;
+
+void demo(int i,int n){
+
+if (i<1){
+    return;
+}
+cout<<i<<endl;
+demo(i-1,n);
+
+
+}
+
+int main(){
+    int n;
+    cin>>n;
+    demo(n,n);
+    return 0;
+}
+
+
+
