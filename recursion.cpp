@@ -151,6 +151,40 @@ int main() {
     return 0;
 }
 
+// string palindrome
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+bool palindrome(string str) {
+    int i = 0;
+    int end = str.length()- 1;
+    while (i < end) {
+        if (str[i]!=str[end]){
+            return false;
+
+        }
+        i++;
+        end--;
+    }
+}
+
+
+int main() {
+    string str;
+    cout << "enter string: ";
+    cin >> str; 
+    if (palindrome(str)) {
+        cout << str << " is a palindrome" << endl;
+    } 
+    else {
+        cout << str << " is not a palindrome" << endl;
+    }
+
+    return 0;
+}
+
 
 
 
