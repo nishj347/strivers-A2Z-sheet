@@ -115,6 +115,43 @@ int main(){
     return 0;
 }
 
+// reverse array
+#include<iostream>
+using namespace std;
+
+void reverse(int arr[], int n) {
+    int i = 0;
+    int end = n - 1;
+    while (i < end) {
+        swap(arr[i], arr[end]);
+        i++;
+        end--;
+    }
+}
+
+int main() {
+    int n;
+    cout << "enter the size of array: ";
+    cin >> n;
+
+    int arr[n];  
+
+    cout << "enter " << n << " elements of the array: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];  
+    }
+
+    reverse(arr, n); 
+
+    cout << "reversed : ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";  
+    }
+
+    return 0;
+}
+
+
 
 
 
